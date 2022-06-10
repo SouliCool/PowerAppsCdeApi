@@ -1,0 +1,20 @@
+"Screen2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    Btn_manage_members As button:
+        Height: =41
+        OnSelect: =
+        Text: ="Manage Members"
+        Width: =270
+        X: =102
+        Y: =150
+        ZIndex: =1
+
+    Btn_manage_projects As button:
+        Height: =41
+        OnSelect: =Navigate(Screen1)
+        Text: ="Manage Projects"
+        Width: =270
+        X: =472
+        Y: =150
+        ZIndex: =2
+

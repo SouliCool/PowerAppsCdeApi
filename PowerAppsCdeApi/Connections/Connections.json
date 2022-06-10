@@ -1,0 +1,23 @@
+{
+  "ab324493-9d6d-41b2-b43a-0c8384145a8c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "CDE Mock API ",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "CDEMockCollection"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ab324493-9d6d-41b2-b43a-0c8384145a8c"
+  }
+}

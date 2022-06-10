@@ -1,0 +1,154 @@
+Screen1 As screen:
+    OnVisible: =Collect(Collection1, DataTable1.Selected)
+
+    Dropdown3 As dropdown:
+        Items: =CDEMockCollection.GetAllProjects()
+        X: =1008
+        Y: =56
+        ZIndex: =2
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =205
+        Items: =CDEMockCollection.GetAllProjects()
+        Width: =1322
+        X: =23
+        Y: =147
+        ZIndex: =3
+
+        archived_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="archived"
+            FieldName: ="archived"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            IsHyperlink: =false
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.archived
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        deactivated_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="deactivated"
+            FieldName: ="deactivated"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.deactivated
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        default_language_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="default_language"
+            FieldName: ="default_language"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.default_language
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        id_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="id"
+            FieldName: ="id"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            IsHyperlink: =true
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.id
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        identification_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="identification"
+            FieldName: ="identification"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.identification
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        logo_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="logo"
+            FieldName: ="logo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.logo
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        name_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="name"
+            FieldName: ="name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        outlook_connect_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="outlook_connect"
+            FieldName: ="outlook_connect"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.outlook_connect
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        public_external_members_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="public_external_members"
+            FieldName: ="public_external_members"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.public_external_members
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+    Button1 As button:
+        Text: ="Button"
+        X: =390
+        Y: =500
+        ZIndex: =4
+

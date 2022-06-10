@@ -1,0 +1,82 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "archived_Column1": 6,
+    "Btn_manage_members": 17,
+    "Btn_manage_projects": 18,
+    "Button1": 15,
+    "DataTable1": 5,
+    "deactivated_Column1": 7,
+    "default_language_Column1": 8,
+    "Dropdown3": 4,
+    "id_Column1": 9,
+    "identification_Column1": 10,
+    "logo_Column1": 11,
+    "name_Column1": 12,
+    "outlook_connect_Column1": 13,
+    "public_external_members_Column1": 14,
+    "Screen1": 3,
+    "Screen2": 16
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "06/10/2022 15:18:18",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "ab324493-9d6d-41b2-b43a-0c8384145a8c": "\"/providers/microsoft.powerapps/apis/shared_cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5/connections/f0846b632534457491b92b9f89d71a2f\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CDEMockCollection": 0,
+    "Collection1": 3,
+    "DropDownSample": 2,
+    "ListboxSample": 1
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 1,
+    "dropdown": 0
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "archived_Column1": 4,
+    "Btn_manage_members": 0,
+    "Btn_manage_projects": 1,
+    "Button1": 13,
+    "DataTable1": 3,
+    "deactivated_Column1": 5,
+    "default_language_Column1": 6,
+    "Dropdown3": 2,
+    "id_Column1": 7,
+    "identification_Column1": 8,
+    "logo_Column1": 9,
+    "name_Column1": 10,
+    "outlook_connect_Column1": 11,
+    "public_external_members_Column1": 12,
+    "Screen1": 0,
+    "Screen2": 0
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1742522,
+    "ControlCount": {
+      "button": 3,
+      "dataTable": 1,
+      "dataTableColumn": 9,
+      "dropdown": 1,
+      "screen": 2
+    },
+    "DeserializationLoadTime": 0.6784814,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

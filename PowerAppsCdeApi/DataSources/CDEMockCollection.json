@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5",
+    "Name": "CDEMockCollection",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

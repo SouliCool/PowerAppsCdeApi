@@ -1,0 +1,281 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-001.azure-apim.net/apim/cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CDEMockCollection" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="CDE Mock Collection">CDE Mock Collection</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <boolean name="GetAllProjects_responses_default_def_items_def_archived_def" />
+      <boolean name="GetAllProjects_responses_default_def_items_def_deactivated_def" />
+      <string name="GetAllProjects_responses_default_def_items_def_default_language_def" />
+      <string name="GetAllProjects_responses_default_def_items_def_identification_def" />
+      <string name="GetAllProjects_responses_default_def_items_def_logo_def" />
+      <string name="GetAllProjects_responses_default_def_items_def_name_def" />
+      <boolean name="GetAllProjects_responses_default_def_items_def_outlook_connect_def" />
+      <boolean name="GetAllProjects_responses_default_def_items_def_public_external_members_def" />
+      <string name="GetAllProjects_responses_default_def_items_def_id_def" />
+      <object name="GetAllProjects_responses_default_def_items_def">
+        <property name="archived" type="boolean" />
+        <property name="deactivated" type="boolean" />
+        <property name="default_language" type="string" />
+        <property name="identification" type="string" />
+        <property name="logo" type="string" />
+        <property name="name" type="string" />
+        <property name="outlook_connect" type="boolean" />
+        <property name="public_external_members" type="boolean" />
+        <property name="id" type="string" />
+      </object>
+      <array typeRef="GetAllProjects_responses_default_def_items_def" name="GetAllProjects_responses_default_def" />
+      <boolean name="GetProject_responses_default_def_archived_def" />
+      <boolean name="GetProject_responses_default_def_deactivated_def" />
+      <string name="GetProject_responses_default_def_default_language_def" />
+      <string name="GetProject_responses_default_def_identification_def" />
+      <string name="GetProject_responses_default_def_logo_def" />
+      <string name="GetProject_responses_default_def_name_def" />
+      <boolean name="GetProject_responses_default_def_outlook_connect_def" />
+      <boolean name="GetProject_responses_default_def_public_external_members_def" />
+      <string name="GetProject_responses_default_def_id_def" />
+      <object name="GetProject_responses_default_def">
+        <property name="archived" type="boolean" />
+        <property name="deactivated" type="boolean" />
+        <property name="default_language" type="string" />
+        <property name="identification" type="string" />
+        <property name="logo" type="string" />
+        <property name="name" type="string" />
+        <property name="outlook_connect" type="boolean" />
+        <property name="public_external_members" type="boolean" />
+        <property name="id" type="string" />
+      </object>
+      <boolean name="CreateNewDocument_param_body_def_communication_accessible_def" />
+      <string name="CreateNewDocument_param_body_def_communication_created_def" />
+      <integer name="CreateNewDocument_param_body_def_communication_index_def" />
+      <object name="CreateNewDocument_param_body_def_filter_def" />
+      <object name="CreateNewDocument_param_body_def_form_definition_def" />
+      <boolean name="CreateNewDocument_param_body_def_forwarded_def" />
+      <integer name="CreateNewDocument_param_body_def_index_def" />
+      <boolean name="CreateNewDocument_param_body_def_invalid_def" />
+      <boolean name="CreateNewDocument_param_body_def_read_def" />
+      <object name="CreateNewDocument_param_body_def_referenced_by_def" />
+      <string name="CreateNewDocument_param_body_def_id_def" />
+      <string name="CreateNewDocument_param_body_def_ProjectId_def" />
+      <object name="CreateNewDocument_param_body_def">
+        <property name="communication_accessible" type="boolean" />
+        <property name="communication_created" type="string" />
+        <property name="communication_index" type="integer" />
+        <property name="filter" typeRef="CreateNewDocument_param_body_def_filter_def" />
+        <property name="form_definition" typeRef="CreateNewDocument_param_body_def_form_definition_def" />
+        <property name="forwarded" type="boolean" />
+        <property name="index" type="integer" />
+        <property name="invalid" type="boolean" />
+        <property name="read" type="boolean" />
+        <property name="referenced_by" typeRef="CreateNewDocument_param_body_def_referenced_by_def" />
+        <property name="id" type="string" />
+        <property name="ProjectId" type="string" />
+      </object>
+      <boolean name="UpdateDocument_param_body_def_communication_accessible_def" />
+      <string name="UpdateDocument_param_body_def_communication_created_def" />
+      <integer name="UpdateDocument_param_body_def_communication_index_def" />
+      <object name="UpdateDocument_param_body_def_filter_def" />
+      <object name="UpdateDocument_param_body_def_form_definition_def" />
+      <boolean name="UpdateDocument_param_body_def_forwarded_def" />
+      <integer name="UpdateDocument_param_body_def_index_def" />
+      <boolean name="UpdateDocument_param_body_def_invalid_def" />
+      <boolean name="UpdateDocument_param_body_def_read_def" />
+      <object name="UpdateDocument_param_body_def_referenced_by_def" />
+      <string name="UpdateDocument_param_body_def_id_def" />
+      <string name="UpdateDocument_param_body_def_ProjectId_def" />
+      <object name="UpdateDocument_param_body_def">
+        <property name="communication_accessible" type="boolean" />
+        <property name="communication_created" type="string" />
+        <property name="communication_index" type="integer" />
+        <property name="filter" typeRef="UpdateDocument_param_body_def_filter_def" />
+        <property name="form_definition" typeRef="UpdateDocument_param_body_def_form_definition_def" />
+        <property name="forwarded" type="boolean" />
+        <property name="index" type="integer" />
+        <property name="invalid" type="boolean" />
+        <property name="read" type="boolean" />
+        <property name="referenced_by" typeRef="UpdateDocument_param_body_def_referenced_by_def" />
+        <property name="id" type="string" />
+        <property name="ProjectId" type="string" />
+      </object>
+      <boolean name="UploadNewFile_param_body_def_content_available_def" />
+      <boolean name="UploadNewFile_param_body_def_content_delayed_def" />
+      <boolean name="UploadNewFile_param_body_def_content_downloadable_def" />
+      <string name="UploadNewFile_param_body_def_content_uri_def" />
+      <boolean name="UploadNewFile_param_body_def_content_viral_def" />
+      <string name="UploadNewFile_param_body_def_description_def" />
+      <string name="UploadNewFile_param_body_def_fulltext_indexed_def" />
+      <string name="UploadNewFile_param_body_def_mime_type_def" />
+      <string name="UploadNewFile_param_body_def_name_def" />
+      <boolean name="UploadNewFile_param_body_def_reused_def" />
+      <integer name="UploadNewFile_param_body_def_size_def" />
+      <string name="UploadNewFile_param_body_def_id_def" />
+      <string name="UploadNewFile_param_body_def_DocumentId_def" />
+      <object name="UploadNewFile_param_body_def">
+        <property name="content_available" type="boolean" />
+        <property name="content_delayed" type="boolean" />
+        <property name="content_downloadable" type="boolean" />
+        <property name="content_uri" type="string" />
+        <property name="content_viral" type="boolean" />
+        <property name="description" type="string" />
+        <property name="fulltext_indexed" type="string" />
+        <property name="mime_type" type="string" />
+        <property name="name" type="string" />
+        <property name="reused" type="boolean" />
+        <property name="size" type="integer" />
+        <property name="id" type="string" />
+        <property name="DocumentId" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-001.azure-apim.net/apim/cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5">
+    <resource path="/{connectionId}/api/Projects">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllProjects" actionName="GetAllProjects" siena:isDeprecated="false">
+        <doc title="Get all projects&#xA;Get all projects" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:GetAllProjects_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetProject" actionName="GetProject" siena:isDeprecated="false">
+        <doc title="Get project&#xA;Get project" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:GetProject_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Members">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllMembers" actionName="GetAllMembers" siena:isDeprecated="false">
+        <doc title="Get all members&#xA;Get all members" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Members/1">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetMember" actionName="GetMember" siena:isDeprecated="false">
+        <doc title="Get member&#xA;Get member" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllDocumentsInProject" actionName="GetAllDocumentsInProject" siena:isDeprecated="false">
+        <doc title="Get all documents in project&#xA;Get all documents in project" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/1">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetDoumentInProject" actionName="GetDoumentInProject" siena:isDeprecated="false">
+        <doc title="Get doument in project&#xA;Get doument in project" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateNewDocument" actionName="CreateNewDocument" siena:isDeprecated="false">
+        <doc title="Create new document&#xA;Create new document" />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="communication_accessible" path="/communication_accessible" type="xs:boolean" />
+            <param style="plain" name="communication_created" path="/communication_created" type="xs:string" />
+            <param style="plain" name="communication_index" path="/communication_index" type="xs:int" />
+            <param style="plain" name="filter" path="/filter" type="service:CreateNewDocument_param_body_def_filter_def" />
+            <param style="plain" name="form_definition" path="/form_definition" type="service:CreateNewDocument_param_body_def_form_definition_def" />
+            <param style="plain" name="forwarded" path="/forwarded" type="xs:boolean" />
+            <param style="plain" name="index" path="/index" type="xs:int" />
+            <param style="plain" name="invalid" path="/invalid" type="xs:boolean" />
+            <param style="plain" name="read" path="/read" type="xs:boolean" />
+            <param style="plain" name="referenced_by" path="/referenced_by" type="service:CreateNewDocument_param_body_def_referenced_by_def" />
+            <param style="plain" name="id" path="/id" type="xs:string" />
+            <param style="plain" name="ProjectId" path="/ProjectId" type="xs:string" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/100">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteDocument" actionName="DeleteDocument" siena:isDeprecated="false">
+        <doc title="Delete  document&#xA;Delete  document" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/100">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="PUT" id="UpdateDocument" actionName="UpdateDocument" siena:isDeprecated="false">
+        <doc title="Update document&#xA;Update document" />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="communication_accessible" path="/communication_accessible" type="xs:boolean" />
+            <param style="plain" name="communication_created" path="/communication_created" type="xs:string" />
+            <param style="plain" name="communication_index" path="/communication_index" type="xs:int" />
+            <param style="plain" name="filter" path="/filter" type="service:UpdateDocument_param_body_def_filter_def" />
+            <param style="plain" name="form_definition" path="/form_definition" type="service:UpdateDocument_param_body_def_form_definition_def" />
+            <param style="plain" name="forwarded" path="/forwarded" type="xs:boolean" />
+            <param style="plain" name="index" path="/index" type="xs:int" />
+            <param style="plain" name="invalid" path="/invalid" type="xs:boolean" />
+            <param style="plain" name="read" path="/read" type="xs:boolean" />
+            <param style="plain" name="referenced_by" path="/referenced_by" type="service:UpdateDocument_param_body_def_referenced_by_def" />
+            <param style="plain" name="id" path="/id" type="xs:string" />
+            <param style="plain" name="ProjectId" path="/ProjectId" type="xs:string" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/1/Files">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllFilesInDocument" actionName="GetAllFilesInDocument" siena:isDeprecated="false">
+        <doc title="Get all files in document&#xA;Get all files in document" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/1/Files/1">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetFileInDocument" actionName="GetFileInDocument" siena:isDeprecated="false">
+        <doc title="Get file in document&#xA;Get file in document" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/1/Files/1">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteFile" actionName="DeleteFile" siena:isDeprecated="false">
+        <doc title="Delete file&#xA;Delete file" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/api/Projects/1/Documents/1/Files/">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="UploadNewFile" actionName="UploadNewFile" siena:isDeprecated="false">
+        <doc title="Upload new file&#xA;Upload new file" />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="content_available" path="/content_available" type="xs:boolean" />
+            <param style="plain" name="content_delayed" path="/content_delayed" type="xs:boolean" />
+            <param style="plain" name="content_downloadable" path="/content_downloadable" type="xs:boolean" />
+            <param style="plain" name="content_uri" path="/content_uri" type="xs:string" />
+            <param style="plain" name="content_viral" path="/content_viral" type="xs:boolean" />
+            <param style="plain" name="description" path="/description" type="xs:string" />
+            <param style="plain" name="fulltext_indexed" path="/fulltext_indexed" type="xs:string" />
+            <param style="plain" name="mime_type" path="/mime_type" type="xs:string" />
+            <param style="plain" name="name" path="/name" type="xs:string" />
+            <param style="plain" name="reused" path="/reused" type="xs:boolean" />
+            <param style="plain" name="size" path="/size" type="xs:int" />
+            <param style="plain" name="id" path="/id" type="xs:string" />
+            <param style="plain" name="DocumentId" path="/DocumentId" type="xs:string" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_cde-20mock-20api-20-5f1c9abb5d0b3af64b-5f6f2df558e7e9fad5" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
