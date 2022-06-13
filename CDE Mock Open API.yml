@@ -1,0 +1,196 @@
+openapi: 3.0.0
+info:
+  title: CDE Mock Collection
+  version: 1.0.0
+servers:
+  - url: https://629c7909e9358232f75b7283.mockapi.io
+paths:
+  /api/Projects:
+    get:
+      tags:
+        - General
+      summary: Get all projects
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1:
+    get:
+      tags:
+        - General
+      summary: Get project
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Members:
+    get:
+      tags:
+        - General
+      summary: Get all members
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Members/1:
+    get:
+      tags:
+        - General
+      summary: Get member
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents:
+    get:
+      tags:
+        - General
+      summary: Get all documents in project
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/1:
+    get:
+      tags:
+        - General
+      summary: Get doument in project
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/:
+    post:
+      tags:
+        - General
+      summary: Create new document
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                communication_accessible: false
+                communication_created: communication_created 1
+                communication_index: 70
+                fields: []
+                filter: {}
+                form_definition: {}
+                forwarded: false
+                index: 58
+                invalid: false
+                read: false
+                referenced_by: {}
+                id: '100'
+                ProjectId: '1'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/100:
+    put:
+      tags:
+        - General
+      summary: Update document
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                communication_accessible: true
+                communication_created: communication_created 1
+                communication_index: 70
+                fields: []
+                filter: {}
+                form_definition: {}
+                forwarded: false
+                index: 58
+                invalid: false
+                read: false
+                referenced_by: {}
+                id: '100'
+                ProjectId: '1'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - General
+      summary: Delete  document
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/1/Files:
+    get:
+      tags:
+        - General
+      summary: Get all files in document
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/1/Files/1:
+    get:
+      tags:
+        - General
+      summary: Get file in document
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - General
+      summary: Delete file
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/Projects/1/Documents/1/Files/:
+    post:
+      tags:
+        - General
+      summary: Upload new file
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                content_available: false
+                content_delayed: false
+                content_downloadable: false
+                content_uri: http://loremflickr.com/640/480
+                content_viral: false
+                description: >-
+                  Sit eum corporis. Officiis sed voluptatibus vero enim nisi.
+                  Provident maxime sint sapiente perspiciatis. Voluptatem
+                  voluptatem adipisci. Quia aspernatur soluta nihil hic minima
+                  deleniti perspiciatis porro. Sint qui et.
+                fulltext_indexed: fulltext_indexed 1
+                mime_type: mime_type 1
+                name: 3D Model - Structure 2
+                reused: false
+                size: 78
+                id: '1'
+                DocumentId: '1000'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

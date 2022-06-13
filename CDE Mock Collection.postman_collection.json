@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "92f9a765-c842-47d0-97ae-de3c5a5ae40a",
+		"name": "CDE Mock Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Members",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Members/1",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Members",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all documents in project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get doument in project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/1",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new document",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"communication_accessible\": false,\r\n    \"communication_created\": \"communication_created 1\",\r\n    \"communication_index\": 70,\r\n    \"fields\": [],\r\n    \"filter\": {},\r\n    \"form_definition\": {},\r\n    \"forwarded\": false,\r\n    \"index\": 58,\r\n    \"invalid\": false,\r\n    \"read\": false,\r\n    \"referenced_by\": {},\r\n    \"id\": \"100\",\r\n    \"ProjectId\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update document",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"communication_accessible\": true,\r\n    \"communication_created\": \"communication_created 1\",\r\n    \"communication_index\": 70,\r\n    \"fields\": [],\r\n    \"filter\": {},\r\n    \"form_definition\": {},\r\n    \"forwarded\": false,\r\n    \"index\": 58,\r\n    \"invalid\": false,\r\n    \"read\": false,\r\n    \"referenced_by\": {},\r\n    \"id\": \"100\",\r\n    \"ProjectId\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/100",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  document",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/100",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all files in document",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/1/Files",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"1",
+						"Files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get file in document",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/1/Files/1",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"1",
+						"Files",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload new file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content_available\": false,\r\n    \"content_delayed\": false,\r\n    \"content_downloadable\": false,\r\n    \"content_uri\": \"http://loremflickr.com/640/480\",\r\n    \"content_viral\": false,\r\n    \"description\": \"Sit eum corporis. Officiis sed voluptatibus vero enim nisi. Provident maxime sint sapiente perspiciatis. Voluptatem voluptatem adipisci. Quia aspernatur soluta nihil hic minima deleniti perspiciatis porro. Sint qui et.\",\r\n    \"fulltext_indexed\": \"fulltext_indexed 1\",\r\n    \"mime_type\": \"mime_type 1\",\r\n    \"name\": \"3D Model - Structure 2\",\r\n    \"reused\": false,\r\n    \"size\": 78,\r\n    \"id\": \"1\",\r\n    \"DocumentId\": \"1000\"\r\n}"
+				},
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/1/Files/",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"1",
+						"Files",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete file",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://629c7909e9358232f75b7283.mockapi.io/api/Projects/1/Documents/1/Files/1",
+					"protocol": "https",
+					"host": [
+						"629c7909e9358232f75b7283",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Projects",
+						"1",
+						"Documents",
+						"1",
+						"Files",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
