@@ -1,0 +1,924 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CDE Mock Collection",
+    "description": "CDE Mock Collection"
+  },
+  "host": "629c7909e9358232f75b7283.mockapi.io",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/Projects": {
+      "get": {
+        "summary": "Get all projects",
+        "description": "Get all projects",
+        "operationId": "GetAllProjects",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "archived": {
+                    "type": "boolean",
+                    "description": "archived"
+                  },
+                  "deactivated": {
+                    "type": "boolean",
+                    "description": "deactivated"
+                  },
+                  "default_language": {
+                    "type": "string",
+                    "description": "default_language"
+                  },
+                  "identification": {
+                    "type": "string",
+                    "description": "identification"
+                  },
+                  "logo": {
+                    "type": "string",
+                    "description": "logo"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "outlook_connect": {
+                    "type": "boolean",
+                    "description": "outlook_connect"
+                  },
+                  "public_external_members": {
+                    "type": "boolean",
+                    "description": "public_external_members"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "id"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects/1": {
+      "get": {
+        "summary": "Get project",
+        "description": "Get project",
+        "operationId": "GetProject",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "archived": {
+                  "type": "boolean",
+                  "description": "archived"
+                },
+                "deactivated": {
+                  "type": "boolean",
+                  "description": "deactivated"
+                },
+                "default_language": {
+                  "type": "string",
+                  "description": "default_language"
+                },
+                "identification": {
+                  "type": "string",
+                  "description": "identification"
+                },
+                "logo": {
+                  "type": "string",
+                  "description": "logo"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "outlook_connect": {
+                  "type": "boolean",
+                  "description": "outlook_connect"
+                },
+                "public_external_members": {
+                  "type": "boolean",
+                  "description": "public_external_members"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Members": {
+      "get": {
+        "summary": "Get all members",
+        "description": "Get all members",
+        "operationId": "GetAllMembers",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "acronym": {
+                    "type": "string",
+                    "description": "acronym"
+                  },
+                  "activated": {
+                    "type": "boolean",
+                    "description": "activated"
+                  },
+                  "authentication_method": {
+                    "type": "string",
+                    "description": "authentication_method"
+                  },
+                  "company": {
+                    "type": "string",
+                    "description": "company"
+                  },
+                  "company_admin": {
+                    "type": "boolean",
+                    "description": "company_admin"
+                  },
+                  "company_long": {
+                    "type": "string",
+                    "description": "company_long"
+                  },
+                  "company_short": {
+                    "type": "string",
+                    "description": "company_short"
+                  },
+                  "external_member": {
+                    "type": "boolean",
+                    "description": "external_member"
+                  },
+                  "firstname": {
+                    "type": "string",
+                    "description": "firstname"
+                  },
+                  "function": {
+                    "type": "string",
+                    "description": "function"
+                  },
+                  "guest_member": {
+                    "type": "boolean",
+                    "description": "guest_member"
+                  },
+                  "guest_project": {
+                    "type": "string",
+                    "description": "guest_project"
+                  },
+                  "identification": {
+                    "type": "string",
+                    "description": "identification"
+                  },
+                  "lastname": {
+                    "type": "string",
+                    "description": "lastname"
+                  },
+                  "note": {
+                    "type": "string",
+                    "description": "note"
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "username"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "id"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Members/1": {
+      "get": {
+        "summary": "Get member",
+        "description": "Get member",
+        "operationId": "GetMember",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "acronym": {
+                  "type": "string",
+                  "description": "acronym"
+                },
+                "activated": {
+                  "type": "boolean",
+                  "description": "activated"
+                },
+                "authentication_method": {
+                  "type": "string",
+                  "description": "authentication_method"
+                },
+                "company": {
+                  "type": "string",
+                  "description": "company"
+                },
+                "company_admin": {
+                  "type": "boolean",
+                  "description": "company_admin"
+                },
+                "company_long": {
+                  "type": "string",
+                  "description": "company_long"
+                },
+                "company_short": {
+                  "type": "string",
+                  "description": "company_short"
+                },
+                "external_member": {
+                  "type": "boolean",
+                  "description": "external_member"
+                },
+                "firstname": {
+                  "type": "string",
+                  "description": "firstname"
+                },
+                "function": {
+                  "type": "string",
+                  "description": "function"
+                },
+                "guest_member": {
+                  "type": "boolean",
+                  "description": "guest_member"
+                },
+                "guest_project": {
+                  "type": "string",
+                  "description": "guest_project"
+                },
+                "identification": {
+                  "type": "string",
+                  "description": "identification"
+                },
+                "lastname": {
+                  "type": "string",
+                  "description": "lastname"
+                },
+                "note": {
+                  "type": "string",
+                  "description": "note"
+                },
+                "username": {
+                  "type": "string",
+                  "description": "username"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents": {
+      "get": {
+        "summary": "Get all documents in project",
+        "description": "Get all documents in project",
+        "operationId": "GetAllDocumentsInProject",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "communication_accessible": {
+                    "type": "boolean",
+                    "description": "communication_accessible"
+                  },
+                  "communication_created": {
+                    "type": "string",
+                    "description": "communication_created"
+                  },
+                  "communication_index": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "communication_index"
+                  },
+                  "fields": {
+                    "type": "array",
+                    "items": {},
+                    "description": "fields"
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "filter"
+                  },
+                  "form_definition": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "form_definition"
+                  },
+                  "forwarded": {
+                    "type": "boolean",
+                    "description": "forwarded"
+                  },
+                  "index": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "index"
+                  },
+                  "invalid": {
+                    "type": "boolean",
+                    "description": "invalid"
+                  },
+                  "read": {
+                    "type": "boolean",
+                    "description": "read"
+                  },
+                  "referenced_by": {
+                    "type": "object",
+                    "properties": {},
+                    "description": "referenced_by"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "id"
+                  },
+                  "ProjectId": {
+                    "type": "string",
+                    "description": "ProjectId"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/1": {
+      "get": {
+        "summary": "Get doument in project",
+        "description": "Get doument in project",
+        "operationId": "GetDoumentInProject",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "communication_accessible": {
+                  "type": "boolean",
+                  "description": "communication_accessible"
+                },
+                "communication_created": {
+                  "type": "string",
+                  "description": "communication_created"
+                },
+                "communication_index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "communication_index"
+                },
+                "fields": {
+                  "type": "array",
+                  "items": {},
+                  "description": "fields"
+                },
+                "filter": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "filter"
+                },
+                "form_definition": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "form_definition"
+                },
+                "forwarded": {
+                  "type": "boolean",
+                  "description": "forwarded"
+                },
+                "index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "index"
+                },
+                "invalid": {
+                  "type": "boolean",
+                  "description": "invalid"
+                },
+                "read": {
+                  "type": "boolean",
+                  "description": "read"
+                },
+                "referenced_by": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "referenced_by"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "ProjectId": {
+                  "type": "string",
+                  "description": "ProjectId"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/": {
+      "post": {
+        "summary": "Create new document",
+        "description": "Create new document",
+        "operationId": "CreateNewDocument",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "communication_accessible": {
+                  "type": "boolean",
+                  "description": "communication_accessible"
+                },
+                "communication_created": {
+                  "type": "string",
+                  "description": "communication_created"
+                },
+                "communication_index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "communication_index"
+                },
+                "fields": {
+                  "type": "array",
+                  "items": {},
+                  "description": "fields"
+                },
+                "filter": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "filter"
+                },
+                "form_definition": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "form_definition"
+                },
+                "forwarded": {
+                  "type": "boolean",
+                  "description": "forwarded"
+                },
+                "index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "index"
+                },
+                "invalid": {
+                  "type": "boolean",
+                  "description": "invalid"
+                },
+                "read": {
+                  "type": "boolean",
+                  "description": "read"
+                },
+                "referenced_by": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "referenced_by"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "ProjectId": {
+                  "type": "string",
+                  "description": "ProjectId"
+                }
+              },
+              "default": {
+                "communication_accessible": false,
+                "communication_created": "communication_created 1",
+                "communication_index": 70,
+                "fields": [],
+                "filter": {},
+                "form_definition": {},
+                "forwarded": false,
+                "index": 58,
+                "invalid": false,
+                "read": false,
+                "referenced_by": {},
+                "id": "100",
+                "ProjectId": "1"
+              }
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/100": {
+      "delete": {
+        "summary": "Delete  document",
+        "description": "Delete  document",
+        "operationId": "DeleteDocument",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "Update document",
+        "description": "Update document",
+        "operationId": "UpdateDocument",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "communication_accessible": {
+                  "type": "boolean",
+                  "description": "communication_accessible"
+                },
+                "communication_created": {
+                  "type": "string",
+                  "description": "communication_created"
+                },
+                "communication_index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "communication_index"
+                },
+                "fields": {
+                  "type": "array",
+                  "items": {},
+                  "description": "fields"
+                },
+                "filter": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "filter"
+                },
+                "form_definition": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "form_definition"
+                },
+                "forwarded": {
+                  "type": "boolean",
+                  "description": "forwarded"
+                },
+                "index": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "index"
+                },
+                "invalid": {
+                  "type": "boolean",
+                  "description": "invalid"
+                },
+                "read": {
+                  "type": "boolean",
+                  "description": "read"
+                },
+                "referenced_by": {
+                  "type": "object",
+                  "properties": {},
+                  "description": "referenced_by"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "ProjectId": {
+                  "type": "string",
+                  "description": "ProjectId"
+                }
+              },
+              "default": {
+                "communication_accessible": true,
+                "communication_created": "communication_created 1",
+                "communication_index": 70,
+                "fields": [],
+                "filter": {},
+                "form_definition": {},
+                "forwarded": false,
+                "index": 58,
+                "invalid": false,
+                "read": false,
+                "referenced_by": {},
+                "id": "100",
+                "ProjectId": "1"
+              }
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/1/Files": {
+      "get": {
+        "summary": "Get all files in document",
+        "description": "Get all files in document",
+        "operationId": "GetAllFilesInDocument",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "content_available": {
+                    "type": "boolean",
+                    "description": "content_available"
+                  },
+                  "content_delayed": {
+                    "type": "boolean",
+                    "description": "content_delayed"
+                  },
+                  "content_downloadable": {
+                    "type": "boolean",
+                    "description": "content_downloadable"
+                  },
+                  "content_uri": {
+                    "type": "string",
+                    "description": "content_uri"
+                  },
+                  "content_viral": {
+                    "type": "boolean",
+                    "description": "content_viral"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "fulltext_indexed": {
+                    "type": "string",
+                    "description": "fulltext_indexed"
+                  },
+                  "mime_type": {
+                    "type": "string",
+                    "description": "mime_type"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "reused": {
+                    "type": "boolean",
+                    "description": "reused"
+                  },
+                  "size": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "size"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "id"
+                  },
+                  "DocumentId": {
+                    "type": "string",
+                    "description": "DocumentId"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/1/Files/1": {
+      "get": {
+        "summary": "Get file in document",
+        "description": "Get file in document",
+        "operationId": "GetFileInDocument",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content_available": {
+                  "type": "boolean",
+                  "description": "content_available"
+                },
+                "content_delayed": {
+                  "type": "boolean",
+                  "description": "content_delayed"
+                },
+                "content_downloadable": {
+                  "type": "boolean",
+                  "description": "content_downloadable"
+                },
+                "content_uri": {
+                  "type": "string",
+                  "description": "content_uri"
+                },
+                "content_viral": {
+                  "type": "boolean",
+                  "description": "content_viral"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "fulltext_indexed": {
+                  "type": "string",
+                  "description": "fulltext_indexed"
+                },
+                "mime_type": {
+                  "type": "string",
+                  "description": "mime_type"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "reused": {
+                  "type": "boolean",
+                  "description": "reused"
+                },
+                "size": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "size"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "DocumentId": {
+                  "type": "string",
+                  "description": "DocumentId"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete file",
+        "description": "Delete file",
+        "operationId": "DeleteFile",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/api/Projects/1/Documents/1/Files/": {
+      "post": {
+        "summary": "Upload new file",
+        "description": "Upload new file",
+        "operationId": "UploadNewFile",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "content_available": {
+                  "type": "boolean",
+                  "description": "content_available"
+                },
+                "content_delayed": {
+                  "type": "boolean",
+                  "description": "content_delayed"
+                },
+                "content_downloadable": {
+                  "type": "boolean",
+                  "description": "content_downloadable"
+                },
+                "content_uri": {
+                  "type": "string",
+                  "description": "content_uri"
+                },
+                "content_viral": {
+                  "type": "boolean",
+                  "description": "content_viral"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "fulltext_indexed": {
+                  "type": "string",
+                  "description": "fulltext_indexed"
+                },
+                "mime_type": {
+                  "type": "string",
+                  "description": "mime_type"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "reused": {
+                  "type": "boolean",
+                  "description": "reused"
+                },
+                "size": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "size"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "DocumentId": {
+                  "type": "string",
+                  "description": "DocumentId"
+                }
+              },
+              "default": {
+                "content_available": false,
+                "content_delayed": false,
+                "content_downloadable": false,
+                "content_uri": "http://loremflickr.com/640/480",
+                "content_viral": false,
+                "description": "Sit eum corporis. Officiis sed voluptatibus vero enim nisi. Provident maxime sint sapiente perspiciatis. Voluptatem voluptatem adipisci. Quia aspernatur soluta nihil hic minima deleniti perspiciatis porro. Sint qui et.",
+                "fulltext_indexed": "fulltext_indexed 1",
+                "mime_type": "mime_type 1",
+                "name": "3D Model - Structure 2",
+                "reused": false,
+                "size": 78,
+                "id": "1",
+                "DocumentId": "1000"
+              }
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
